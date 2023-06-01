@@ -18,9 +18,6 @@ type Config struct {
 	Filename  string
 }
 
-// a tool for scp file into remote server
-// $ CONFIG='{"ipaddress": "10.30.6.101", "filename": "some-file", "username": "my-user", "password": "my-pass", "port": 22}' ./golang-scp
-// this will copy `some-file` to remote server
 func main() {
 	configStr := os.Getenv("CONFIG")
 	var config Config
